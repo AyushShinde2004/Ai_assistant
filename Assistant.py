@@ -147,7 +147,7 @@ def get_weather():
         return f"Error: {str(e)}"
 
 # Core Functions
-def say(text, voice_id="ZF6FPAbjXT4488VcRRnw"):
+def say(text, voice_id="ZF6FPAbjXT4488VcRRnw"): ### IF ANY PROBLEM REALTED TO VOICE CHANGE THIS VOIDE_ID=YOUR_ID FROM ELEVEN LABS
     global usage_tracker, current_key_index
     try:
         current_key = VOICE_KEYS[current_key_index]
@@ -258,7 +258,7 @@ def process_volume_command(transcript):
 def wakeUp():
     porcupine = pvporcupine.create(
         access_key=os.getenv('PORC_API_KEY'),
-        keyword_paths=[r"C:\Users\LEGION\OneDrive\Desktop\Python Shit\A.I Assistant\Hey-Grace_en_windows_v3_0_0.ppn"]
+        keyword_paths=[r"C:\PATH_TO_YOUR\Hey-Grace_en_windows_v3_0_0.ppn"] ### MAKE SURE TO CHANGE THIS PATH
     )
     p = pyaudio.PyAudio()
     stream = p.open(
@@ -319,9 +319,7 @@ def initialize_driver():
         except:
             pass  
     chrome_options = uc.ChromeOptions()
-    chrome_options.binary_location = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
-    chrome_options.add_argument("--load-extension=C:\\Users\\LEGION\\OneDrive\\Desktop\\Python Shit\\A.I Assistant\\uBlock")
-    chrome_options.add_argument("--disable-extensions-except=C:\\Users\\LEGION\\OneDrive\\Desktop\\Python Shit\\A.I Assistant\\uBlock")
+    chrome_options.binary_location = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" ### THIS IS THE DEFAULT BUT IF NOT CHANGE IT TO YOUR BROWSER PATH 
     chrome_options.add_argument("--disable-features=PreloadMediaEngagementData,MediaEngagementBypassAutoplayPolicies")
     chrome_options.add_argument("--window-size=1200,800")
     driver = uc.Chrome(options=chrome_options)
@@ -541,7 +539,7 @@ if __name__ == '__main__':
 
                     if "open my books" in transcript.lower():
                         say("Ok")
-                        os.system(r'"C:\Users\LEGION\Downloads\Books"')
+                        os.system(r'"C:\PATH"')
                         break
 
                     if "remind me" in transcript.lower():
@@ -558,11 +556,6 @@ if __name__ == '__main__':
                         now = datetime.datetime.now()
                         hour, minute = now.strftime("%H"), now.strftime("%M")
                         say(f"The time is {hour} and {minute} minutes")
-                        break
-
-                    elif "open youtube music" in transcript.lower():
-                        say("Opening YouTube Music")
-                        os.system(r'"C:\Users\LEGION\AppData\Local\Google\Chrome\Application\chrome_proxy.exe" --profile-directory=Default --app-id=cinhimbnkkaeohfgghhklpknlkffjgod')
                         break
 
                     elif "play" in transcript.lower() and ("on youtube" in transcript.lower() or "youtube" in transcript.lower()):
