@@ -20,8 +20,8 @@ This AI-powered voice assistant integrates multiple services, including speech r
 ## 🔧 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ai-voice-assistant.git
-   cd ai-voice-assistant
+   git clone https://github.com/AyushShinde2004/Ai_assistant.git
+   cd Ai_assistant
    ```
 2. Install dependencies:
    ```bash
@@ -29,21 +29,26 @@ This AI-powered voice assistant integrates multiple services, including speech r
    ```
 3. Set up your `.env` file:
    ```plaintext
-   GEMINI_API_KEY=your_api_key
-   WEATHER_API_KEY=your_weather_api_key
-   SPOTIFY_CLIENT_ID=your_spotify_client_id
-   SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
-   SPOTIFY_REDIRECT_URI=your_redirect_uri
+    GEMINI_API_KEY=
+    PORC_API_KEY=
+    VOICE_API_KEY_1=
+    VOICE_API_KEY_2=
+    VOICE_API_KEY_3=
+    SPOTIFY_CLIENT_ID=
+    SPOTIFY_CLIENT_SECRET=
+    SPOTIFY_REDIRECT_URI=
+    WEATHER_API_KEY=
    ```
 
 ## 🎙️ Usage
 Run the assistant:
 ```bash
-python main.py
+python Assistant.py
 ```
 
 ### Example Commands:
 - **"Play Imagine Dragons on Spotify"** 🎶
+- **"Play TheWeeknd on Youtube"** 🎶
 - **"Set a reminder in 10 minutes"** ⏳
 - **"What's the weather like?"** 🌦️
 - **"Turn volume to 50%"** 🔈
