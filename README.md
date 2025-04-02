@@ -1,79 +1,83 @@
-# 🎙️ AI Voice Assistant - Grace 🤖  
+# 🤖 AI Voice Assistant
 
-A smart voice assistant that integrates speech recognition, API calls, web automation, and media playback.  
+## 🚀 Overview
+This AI-powered voice assistant integrates multiple services, including speech recognition, text-to-speech, web automation, and Spotify playback. It can:
+- Recognize voice commands 🎙️
+- Play YouTube videos 📺
+- Control system volume 🔊
+- Set reminders ⏰
+- Provide weather updates ☁️
+- Control Spotify playback 🎵
 
-## 🚀 Features  
-- 🎤 **Speech Recognition** - Listens and understands commands  
-- 🔊 **Text-to-Speech** - Converts text into natural-sounding speech  
-- 🎶 **Spotify Control** - Play, pause, and manage your playlists  
-- 📺 **YouTube Automation** - Play and control YouTube videos  
-- ⏰ **Reminders & Alarms** - Set reminders and get notified  
-- 🌦️ **Weather Updates** - Get real-time weather updates  
-- 📡 **API Integration** - Supports ElevenLabs, Gemini AI, and more  
+## 🛠️ Technologies Used
+- **Speech Recognition** (`speech_recognition`)
+- **Text-to-Speech** (`pvleopard`, `elevenlabs API`)
+- **Web Automation** (`selenium`, `undetected_chromedriver`)
+- **Media Playback** (`pygame`, `pydub`)
+- **Music Streaming** (`spotipy`)
+- **Environment Variables** (`dotenv`)
 
-## 🛠️ Installation  
+## 🔧 Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ai-voice-assistant.git
+   cd ai-voice-assistant
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Set up your `.env` file:
+   ```plaintext
+   GEMINI_API_KEY=your_api_key
+   WEATHER_API_KEY=your_weather_api_key
+   SPOTIFY_CLIENT_ID=your_spotify_client_id
+   SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+   SPOTIFY_REDIRECT_URI=your_redirect_uri
+   ```
 
-1. **Clone the repository:**  
-   ```sh
-   git clone https://github.com/your-username/voice-assistant.git
-   cd voice-assistant
-Install dependencies:
-
-sh
-Copy
-Edit
-pip install -r requirements.txt
-Set up environment variables:
-
-Create a .env file
-
-Add your API keys:
-
-ini
-Copy
-Edit
-GEMINI_API_KEY=your_api_key
-WEATHER_API_KEY=your_weather_api_key
-SPOTIFY_CLIENT_ID=your_spotify_client_id
-SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
-SPOTIFY_REDIRECT_URI=your_redirect_uri
-🎧 Usage
+## 🎙️ Usage
 Run the assistant:
-
-sh
-Copy
-Edit
+```bash
 python main.py
-Say "Hey Grace" to wake up the assistant.
+```
 
-Ask it to play music, set reminders, fetch weather, etc.
+### Example Commands:
+- **"Play Imagine Dragons on Spotify"** 🎶
+- **"Set a reminder in 10 minutes"** ⏳
+- **"What's the weather like?"** 🌦️
+- **"Turn volume to 50%"** 🔈
 
-📌 Supported Commands
-🎙️ Command	📝 Description
-"Play [song] on Spotify"	Plays a song on Spotify
-"Set a reminder for [time]"	Sets a reminder
-"What's the weather?"	Fetches current weather
-"Increase volume to 50%"	Adjusts system volume
-"Play [video] on YouTube"	Opens YouTube and plays the video
-"Pause music"	Pauses Spotify playback
-🏗️ Contributing
-Fork the repository
+## 📝 Features
+### 🗣️ Speech Recognition & AI Responses
+- Uses Google Speech Recognition to process voice commands.
+- Interacts with the Gemini API for AI-generated responses.
 
-Create a new branch (git checkout -b feature-branch)
+### 🎶 Music & Video Control
+- Plays music on **Spotify**.
+- Plays videos on **YouTube** using Selenium automation.
+- Controls **system volume**.
 
-Commit your changes (git commit -m "Added new feature")
+### ⏰ Reminder System
+- Set and check reminders with automatic voice alerts.
 
-Push to the branch (git push origin feature-branch)
+### ☁️ Weather Updates
+- Retrieves real-time weather information via the **OpenWeather API**.
 
-Open a Pull Request
+## 🤝 Contribution
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. Commit changes:
+   ```bash
+   git commit -m "Added new feature"
+   ```
+4. Push and create a pull request.
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
 
-Made with ❤️ by Your Name
-
-sql
-Copy
-Edit
-
-Just **copy and paste** it into your `README.md` file in your GitHub repo! 🚀 Let me know if yo
+---
+🚀 Built with Python and Passion! ❤️
