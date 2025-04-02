@@ -1,83 +1,79 @@
-🎙️ Grace - Your AI Voice Assistant 🤖✨
-Python
-License
+# 🎙️ AI Voice Assistant - Grace 🤖  
 
-Grace is a voice-controlled AI assistant built with Python that can:
-🎵 Play music on Spotify/YouTube
-⏰ Set reminders
-🌤️ Check weather
-🔊 Control system volume
-🗣️ Have natural conversations (Gemini AI)
-...and much more!
+A smart voice assistant that integrates speech recognition, API calls, web automation, and media playback.  
 
-🚀 Features
-Feature	Command Example
-Music Playback 🎶	"Play Bohemian Rhapsody on Spotify", "Pause YouTube"
-Reminders ⏰	"Remind me in 20 minutes to take a break"
-System Control 🖥️	"Set volume to 50%", "Open YouTube Music"
-Conversational AI 💬	"Tell me about quantum computing", "Search for Python tutorials"
-Smart Switching 🔄	Auto-switches voice API keys when limits are reached
-⚙️ Setup
-📋 Requirements
-Python 3.8+
+## 🚀 Features  
+- 🎤 **Speech Recognition** - Listens and understands commands  
+- 🔊 **Text-to-Speech** - Converts text into natural-sounding speech  
+- 🎶 **Spotify Control** - Play, pause, and manage your playlists  
+- 📺 **YouTube Automation** - Play and control YouTube videos  
+- ⏰ **Reminders & Alarms** - Set reminders and get notified  
+- 🌦️ **Weather Updates** - Get real-time weather updates  
+- 📡 **API Integration** - Supports ElevenLabs, Gemini AI, and more  
 
-ffmpeg (for audio processing)
+## 🛠️ Installation  
 
-API Keys (see .env.example)
+1. **Clone the repository:**  
+   ```sh
+   git clone https://github.com/your-username/voice-assistant.git
+   cd voice-assistant
+Install dependencies:
 
-🔧 Installation
-bash
+sh
 Copy
-# Clone repo
-git clone https://github.com/yourusername/grace-ai-assistant.git
-cd grace-ai-assistant
-
-# Install dependencies
+Edit
 pip install -r requirements.txt
+Set up environment variables:
 
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your API keys
-🔑 Required APIs
-ElevenLabs (Voice)
+Create a .env file
 
-Google Gemini
+Add your API keys:
 
-Spotify Developer
-
-OpenWeatherMap
-
-Porcupine (Wake Word)
-
-🎛️ Usage
-bash
+ini
 Copy
-python grace.py
-Wake Word: "Hey Grace" 👂
-Try commands like:
+Edit
+GEMINI_API_KEY=your_api_key
+WEATHER_API_KEY=your_weather_api_key
+SPOTIFY_CLIENT_ID=your_spotify_client_id
+SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+SPOTIFY_REDIRECT_URI=your_redirect_uri
+🎧 Usage
+Run the assistant:
 
-"What's the weather?" ☀️
+sh
+Copy
+Edit
+python main.py
+Say "Hey Grace" to wake up the assistant.
 
-"Play my liked songs on shuffle" 🔀
+Ask it to play music, set reminders, fetch weather, etc.
 
-"Set volume to 70%" 🔊
+📌 Supported Commands
+🎙️ Command	📝 Description
+"Play [song] on Spotify"	Plays a song on Spotify
+"Set a reminder for [time]"	Sets a reminder
+"What's the weather?"	Fetches current weather
+"Increase volume to 50%"	Adjusts system volume
+"Play [video] on YouTube"	Opens YouTube and plays the video
+"Pause music"	Pauses Spotify playback
+🏗️ Contributing
+Fork the repository
 
-"Remind me in 1 hour to call mom" ⏰
+Create a new branch (git checkout -b feature-branch)
 
-🛠️ Technical Stack
-Voice Recognition: speech_recognition, pvporcupine
+Commit your changes (git commit -m "Added new feature")
 
-Text-to-Speech: ElevenLabs API 🗣️
+Push to the branch (git push origin feature-branch)
 
-AI Chat: Google Gemini 🤖
-
-Music Control: spotipy, Selenium 🎵
-
-System Integration: pycaw, winsound 💻
+Open a Pull Request
 
 📜 License
-MIT License - Feel free to customize and extend!
+This project is licensed under the MIT License.
 
-💡 Pro Tip: Add your frequent commands to the sites list for quick access!
+Made with ❤️ by Your Name
 
-🌟 Star this repo if you find it useful! → GitHub Stars
+sql
+Copy
+Edit
+
+Just **copy and paste** it into your `README.md` file in your GitHub repo! 🚀 Let me know if yo
